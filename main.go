@@ -1,10 +1,9 @@
 package main
 
-func Add(a, b int) int {
-	return a + b
-}
-
+import (
+    "github.com/post-human-world/go-testings-for-jenkins-pipeline/modules"
+)
 
 func main()  {
-  Add(1, 2)
+    modules.Add(1, 2)
 }
