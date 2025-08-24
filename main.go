@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	modules.Add(1, 2)
+	modules.Add(1, 2) //nolint
 }
