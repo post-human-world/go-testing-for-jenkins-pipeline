@@ -2,6 +2,7 @@ package modules_test
 
 import (
 	"testing"
+
 	"github.com/post-human-world/go-testing-for-jenkins-pipeline/modules"
 )
 
