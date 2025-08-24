@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	_ := modules.Add(1, 2) //nolint:mnd
+	_ = modules.Add(1, 2) //nolint:mnd //not magic number
 }
