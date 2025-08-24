@@ -1,9 +1,12 @@
 package modules_test
 
-import "testing"
+import (
+	"testing"
+	"github.com/post-human-world/go-testing-for-jenkins-pipeline/modules"
+)
 
 func TestAdd(t *testing.T) {
-	result := Add(2, 3)
+	result := modules.Add(2, 3)
 	expected := 5
 
 	if result != expected {
@@ -12,7 +15,7 @@ func TestAdd(t *testing.T) {
 }
 
 func TestAddNegativeNumbers(t *testing.T) {
-	result := Add(-2, -3)
+	result := modules.Add(-2, -3)
 	expected := -5
 
 	if result != expected {
