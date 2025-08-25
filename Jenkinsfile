@@ -27,12 +27,6 @@ pipeline {
                 sh '''
                     #!/bin/bash
                     mkdir coverage
-
-                    # coverage profiling
-                    go build -cover -o app ./main.go
-                    chmod a+x ./app
-                    GOCOVERDIR=coverage ./app
-
                     # coverage
                     go test -v -coverprofile coverage/cover.out ./...
                     go tool cover -html coverage/cover.out -o coverage/cover.html
